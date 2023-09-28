@@ -15,6 +15,7 @@ import './home.css'
 import TextArea from "../../components/textarea";
 import Tabs from "../../components/tabs";
 import Badge from "../../components/badge";
+import TitleSubtitle from "../../components/title-subtitle";
 const Home = () => {
   const [count, setCount] = useState(0);
   const [input, setInput] = useState("");
@@ -28,7 +29,7 @@ const Home = () => {
 
   return (
     <Container>
-      <h1>Home Page</h1>
+      <TitleSubtitle title="Our Products" subTitle="Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore"/>
       <div>
         <CounterButton count={count} setCount={setCount} />
         <br></br>
