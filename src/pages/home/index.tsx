@@ -13,7 +13,6 @@ import SubscribeSvg from "../../assest/icon/subscribe.svg";
 import Rating from "../../components/rating";
 import './home.css'
 import TextArea from "../../components/textarea";
-
 const Home = () => {
   const [count, setCount] = useState(0);
   const [input, setInput] = useState("");
