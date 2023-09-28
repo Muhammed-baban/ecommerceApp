@@ -14,6 +14,7 @@ import Rating from "../../components/rating";
 import './home.css'
 import TextArea from "../../components/textarea";
 import Tabs from "../../components/tabs";
+import Badge from "../../components/badge";
 const Home = () => {
   const [count, setCount] = useState(0);
   const [input, setInput] = useState("");
@@ -77,6 +78,8 @@ const Home = () => {
       <div><Tabs data={tabData} active={activeTab} setActive={setActiveTab} />
       
     </div>
+    <br></br>
+    <Badge oldPrice={78} price={70} stock={0} />
     </Container>
   );
 };
