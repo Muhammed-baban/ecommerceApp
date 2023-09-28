@@ -13,9 +13,18 @@ import SubscribeSvg from "../../assest/icon/subscribe.svg";
 import Rating from "../../components/rating";
 import './home.css'
 import TextArea from "../../components/textarea";
+import Tabs from "../../components/tabs";
 const Home = () => {
   const [count, setCount] = useState(0);
   const [input, setInput] = useState("");
+  const tabData = [
+    { label: 'New Arrival' },
+    { label: 'Featured' },
+    { label: 'On Sale' },
+    { label: 'Trending' },
+  ];
+  const [activeTab, setActiveTab] = useState('new arrival'); // Varsayılan aktif sekme
+
   return (
     <Container>
       <h1>Home Page</h1>
@@ -65,6 +74,9 @@ const Home = () => {
       <Rating initialValue={2} max={5} onChange={() => {}}></Rating>
       <br></br>
       <TextArea label="Message" value="" onChange={()=>{}}></TextArea>
+      <div><Tabs data={tabData} active={activeTab} setActive={setActiveTab} />
+      
+    </div>
     </Container>
   );
 };
