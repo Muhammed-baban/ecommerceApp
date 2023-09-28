@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "name": "Home",
+        "link": "/"
+    },
+    {
+        "id": 2,
+        "name": "About",
+        "link": "/notes"
+    },
+    {
+        "id": 3,
+        "name": "Home furniture",
+        "link": "/todo",
+        "dropdown":[
+            {"id": 9,
+            "name": "Bedroom",
+            "link": "/bedroom"},
+            {"id": 9,
+            "name": "Dining",
+            "link": "/dining"},
+            {"id": 9,
+            "name": "Living",
+            "link": "/living"}
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Office Furniture",
+        "link": "/trello",
+        "dropdown":[
+            {"id": 9,
+            "name": "Lounge",
+            "link": "/lounge"},
+            {"id": 10,
+            "name": "Office Chair",
+            "link": "/officechair"},
+            {"id": 11,
+            "name": "Office Table",
+            "link": "/officetable"}
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Hospital Furniture",
+        "link": "/trello",
+        "dropdown":[
+            {"id": 7,
+            "name": "Hospital Bed",
+            "link": "/hospitalbed"},
+            {"id": 8,
+            "name": "Hospital Utility",
+            "link": "/hospitalunility"}
+        ]
+
+    },
+    {
+        "id": 6,
+        "name": "Contact",
+        "link": "/trello"
+    }
+]

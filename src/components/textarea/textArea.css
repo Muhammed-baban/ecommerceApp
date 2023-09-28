@@ -1,0 +1,36 @@
+.styled-textArea {
+  display: inline-flex;
+  flex-direction: column;
+  width: 550px;
+
+}
+
+.styled-textArea.maxWidth {
+  width: 100%;
+}
+
+.styled-textArea-label {
+  display: block;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: rgb(33, 33, 33);
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.styled-textArea-text {
+  width: 100%;
+  display: block;
+  line-height: 1;
+  padding: 12px 15px;
+  transition: all 0.4s ease 0s;
+  border-radius: 3px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  border: 1px solid rgb(235, 235, 235);
+}
+
+.styled-textArea-text:focus {
+  border:1px solid rgb(255, 112, 4);
+}

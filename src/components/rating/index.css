@@ -1,0 +1,14 @@
+.styled-rating {
+    display: inline-block;
+  }
+  
+  .styled-rating-star {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .styled-rating-star.filled {
+    color: #f5a623;
+  }   

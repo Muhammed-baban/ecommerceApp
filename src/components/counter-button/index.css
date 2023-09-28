@@ -1,0 +1,68 @@
+
+.styled-counter-button {
+    width: 120px;
+    display: flex;
+    border: 1px solid rgb(255, 112, 4);
+    height: 50px;
+  }
+  .styled-counter-button-up,
+  .styled-counter-button-down {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 36px;
+    }
+
+    .styled-counter-button-down {
+    border-right:  1px solid rgb(255, 112, 4);
+    }
+  
+  .styled-counter-button-up {
+    border-left: 1px solid rgb(255, 112, 4);
+  }
+  
+  .styled-counter-value {
+    width: 100%;
+    border: none;
+    display: flex;
+    text-align: center;
+    font-weight: 600;
+    background-color: transparent;
+  }
+
+  
+.styled-counter-button.grey {
+    width: 90px;
+    height: 35px;
+    display: flex;
+    padding: 0px 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(243, 244, 246);
+  }
+  
+  .styled-counter-button-down.grey {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    }
+  
+  .styled-counter-button-up.grey {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .styled-counter-value.grey {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .styled-counter-button-up.primary:hover,
+  .styled-counter-button-down.primary:hover{
+    background-color:rgb(255, 112, 4);
+    color: white;
+  }

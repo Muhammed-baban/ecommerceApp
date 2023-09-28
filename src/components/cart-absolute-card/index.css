@@ -1,0 +1,38 @@
+.styled-cart-absolute-button{
+    right: 0px;
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    z-index: 999;
+    position: fixed;
+    -webkit-box-align: center;
+    align-items: center;
+    top: calc(110px + 30%);
+    flex-direction: column;
+    border-radius: 3px 0px 0px 3px;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 0px 16px -1px;
+    font-family: "Open Sans";
+    background-color: rgb(47, 51, 58);
+    font-weight: 600; 
+    cursor: pointer;
+}
+.styled-cart-absolute-items{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+.styled-cart-absolute-price{
+    width: 65px;
+    height: 25px;
+    padding: 0px 5px;
+    margin-top: 5px;
+    line-height: 25px;
+    color: rgb(255, 112, 4);
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 700;
+}

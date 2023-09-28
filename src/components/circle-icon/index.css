@@ -1,0 +1,52 @@
+.styled-circle-icon{
+    margin-left: 40px;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition: all 0.4s ease 0s;
+    border-radius: 50%;
+    border: 2px solid rgb(67, 71, 78);
+    cursor: pointer;
+}
+
+.styled-circle-icon-items{
+    align-self: center;
+    text-align: center;
+    
+}
+
+.styled-circle-icon-image{
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.styled-circle-icon-label{
+    margin: 12px 0px 0px;
+    color: rgb(71, 71, 71);
+    transition: all 0.4s ease 0s;
+    font-weight: 600;
+    text-decoration:none;
+}
+
+
+.styled-circle-icon:hover{
+    border: 2px dashed rgb(255, 112, 4);
+    /* animation: rotate 2s linear infinite; */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+

@@ -1,0 +1,35 @@
+footer {
+    background-color: rgb(47, 51, 58);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* position: fixed; Sabit pozisyon */
+    bottom: 0; /* Sayfanın en altında */
+    left: 0; /* Sayfanın solunda */
+    right: 0; /* Sayfanın sağında */
+    z-index: 100; /* Görünürlük sırası (diğer öğelerin üzerinde görüntülenmesini sağlar) */
+  }
+  
+.styled-footer{
+    padding-top: 100px;
+    padding-bottom: 100px;}
+
+.icons{
+    display: flex;
+}
+
+.icon{
+    line-height: 38px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    background-color: transparent;
+    display: block;
+    border-radius: 50%;
+}
+
+.icon:hover{
+    background-color: rgb(255, 112, 4);
+}

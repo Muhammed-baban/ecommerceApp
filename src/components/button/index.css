@@ -1,0 +1,36 @@
+.styled-button {
+    display: flex;
+    flex-wrap: wrap;
+    outline: none;
+    padding-inline: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    line-height: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .styled-button-icon{
+    margin-right: 3px;
+    display: flex;
+  }
+  
+  .styled-button.maxWidth {
+    width: 100%;
+  }
+  
+  .styled-button.color-primary {
+    transition: all 0.4s ease 0s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 112, 4);
+    font-size: 16px;
+    font-family: Raleway;
+  }
+
+  .styled-button.color-primary:hover {
+    background-color: black;
+    color: rgb(255, 112, 4);
+  }
+  
