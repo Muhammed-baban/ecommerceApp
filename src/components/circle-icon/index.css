@@ -10,6 +10,7 @@
     border-radius: 50%;
     border: 2px solid rgb(67, 71, 78);
     cursor: pointer;
+    margin-bottom: 100px;
 }
 
 .styled-circle-icon-items{
@@ -35,10 +36,19 @@
     text-decoration:none;
 }
 
-
 .styled-circle-icon:hover{
+    border-color: transparent;
+}
+.styled-circle-icon:hover::before{
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     border: 2px dashed rgb(255, 112, 4);
-    /* animation: rotate 2s linear infinite; */
+    animation: rotate 1s linear infinite; 
+    position: absolute;
+    border-radius: 50%;
 }
 
 @keyframes rotate {

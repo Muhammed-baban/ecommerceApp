@@ -11,25 +11,49 @@ import Officechair from "../../assest/img/Officechair.png";
 import Button from "../../components/button";
 import SubscribeSvg from "../../assest/icon/subscribe.svg";
 import Rating from "../../components/rating";
-import './home.css'
+import "./home.css";
 import TextArea from "../../components/textarea";
 import Tabs from "../../components/tabs";
 import Badge from "../../components/badge";
 import TitleSubtitle from "../../components/title-subtitle";
+import IconButton from "../../components/icon-button";
+import Favorites from "../../assest/icon/favotites.svg";
+
 const Home = () => {
   const [count, setCount] = useState(0);
   const [input, setInput] = useState("");
   const tabData = [
-    { label: 'New Arrival' },
-    { label: 'Featured' },
-    { label: 'On Sale' },
-    { label: 'Trending' },
+    { label: "New Arrival" },
+    { label: "Featured" },
+    { label: "On Sale" },
+    { label: "Trending" },
   ];
-  const [activeTab, setActiveTab] = useState('new arrival'); // Varsayılan aktif sekme
+  const [activeTab, setActiveTab] = useState("new arrival"); // Varsayılan aktif sekme
 
   return (
     <Container>
-      <TitleSubtitle title="Our Products" subTitle="Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore"/>
+      <div className="styled-home-circle-icon">
+        <CircleIcon img={img} label="Bedroom" href="/"></CircleIcon>
+        <CircleIcon img={Living} label="Living" href="/"></CircleIcon>
+        <CircleIcon img={Dining} label="Dining" href="/"></CircleIcon>
+        <CircleIcon img={Lounge} label="Lounge" href="/"></CircleIcon>
+        <CircleIcon
+          img={Officechair}
+          label="Office Chair"
+          href="/"
+        ></CircleIcon>
+      </div>
+
+      <TitleSubtitle
+        title="Our Products"
+        subTitle="Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore"
+      />
+      <div>
+        <Tabs data={tabData} active={activeTab} setActive={setActiveTab} />
+      </div>
+      <div>
+        <IconButton icon={Favorites} variant="orange" size={30} />
+      </div>
       <div>
         <CounterButton count={count} setCount={setCount} />
         <br></br>
@@ -56,13 +80,7 @@ const Home = () => {
           width={300}
         />
       </div>
-      <div className="styled-home-circle-icon">
-        <CircleIcon img={img} label="Bedroom" href="/"></CircleIcon>
-        <CircleIcon img={Living} label="Living" href="/"></CircleIcon>
-        <CircleIcon img={Dining} label="Dining" href="/"></CircleIcon>
-        <CircleIcon img={Lounge} label="Lounge" href="/"></CircleIcon>
-        <CircleIcon img={Officechair} label="Office Chair" href="/"></CircleIcon>
-      </div>
+
       <br></br>
       <Button
         label="Shop Now"
@@ -72,15 +90,25 @@ const Home = () => {
         icon={SubscribeSvg}
         iconSize={15}
       ></Button>
+      <Button
+        label="Shop Now"
+        onClick={() => {}}
+        width={150}
+        variant="white"
+      ></Button>
+      <Button
+        label="Shop Now"
+        onClick={() => {}}
+        width={150}
+        variant="black"
+      ></Button>
       <br></br>
       <Rating initialValue={2} max={5} onChange={() => {}}></Rating>
       <br></br>
-      <TextArea label="Message" value="" onChange={()=>{}}></TextArea>
-      <div><Tabs data={tabData} active={activeTab} setActive={setActiveTab} />
-      
-    </div>
-    <br></br>
-    <Badge oldPrice={78} price={70} stock={0} />
+      <TextArea label="Message" value="" onChange={() => {}}></TextArea>
+
+      <br></br>
+      <Badge oldPrice={78} price={70} stock={0} />
     </Container>
   );
 };

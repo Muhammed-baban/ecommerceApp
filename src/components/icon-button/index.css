@@ -1,0 +1,36 @@
+
+.styled-icon-button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+}
+  
+.styled-icon-button-image{
+        display: block; 
+        margin: 0 auto; 
+        text-align: center;
+        justify-content: center;
+}
+  
+.icon-button.black {
+    color: black;
+}
+  
+.styled-icon-button.orange {
+    color: orange;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+  
+.styled-icon-button.orange:hover {
+    background-color: rgb(255, 112, 4);
+}
+  
+.icon-button.white {
+    color: white;
+    background-color: black; 
+}
+  
