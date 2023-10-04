@@ -18,8 +18,13 @@ import Badge from "../../components/badge";
 import TitleSubtitle from "../../components/title-subtitle";
 import IconButton from "../../components/icon-button";
 import Favorites from "../../assest/icon/favotites.svg";
+import IconLabel from "../../components/icon-label";
+import Hyperlink from "../../components/hyperlink";
+import ProductCard from "../../components/product-card";
+import ProductJson from "../../json/product.json"
 
 const Home = () => {
+  const jsonData =ProductJson;
   const [count, setCount] = useState(0);
   const [input, setInput] = useState("");
   const tabData = [
@@ -106,9 +111,18 @@ const Home = () => {
       <Rating initialValue={2} max={5} onChange={() => {}}></Rating>
       <br></br>
       <TextArea label="Message" value="" onChange={() => {}}></TextArea>
-
       <br></br>
       <Badge oldPrice={78} price={70} stock={0} />
+      <IconLabel label="Add to wishlist" icon={Favorites} onClick={()=>{}} size={10}/>
+      <br></br>
+      <Hyperlink to="/" children="deneme" variant="white"/>
+      <Hyperlink to="/" children="deneme" variant="black"/>
+      <br></br>
+      <div className="App">
+      {jsonData.products.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
     </Container>
   );
 };

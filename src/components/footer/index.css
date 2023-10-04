@@ -33,3 +33,31 @@ footer {
 .icon:hover{
     background-color: rgb(255, 112, 4);
 }
+.styled-footer-elemets-about{
+    max-width: 33.33%;
+}
+
+.styled-footer-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .styled-footer-elemets-about,
+  .styled-footer-elements-links,
+  .styled-footer-elements-subscribe {
+    flex: 1;
+    margin-right: 50px;
+  }
+  
+  
+
+  .styled-footer-elements-links{
+    display: flex;
+    gap: 50px;  
+}
+  
+.styled-footer-elements-links-a{
+    text-decoration: none;
+    color: white;
+}

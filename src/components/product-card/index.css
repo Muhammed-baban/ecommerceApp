@@ -1,0 +1,14 @@
+.styled-product-card {
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  
+.styled-product-card-image{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.styled-product-card-image:hover{
+    transform: scale(1.1) rotate(3deg);
+}

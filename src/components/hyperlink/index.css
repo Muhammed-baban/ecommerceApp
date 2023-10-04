@@ -1,0 +1,16 @@
+.styled-hyperlink{
+    text-decoration: none;
+}
+
+.styled-hyperlink.black{
+    color: rgb(71, 71, 71);
+}
+
+.styled-hyperlink.white{
+    color: white;
+}
+
+.styled-hyperlink:hover{
+    color:rgb(255, 112, 4);
+    text-decoration: none;
+}

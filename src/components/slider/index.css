@@ -1,0 +1,24 @@
+.styled-slider{
+    height: 750px;
+    display: flex;
+    background-color: rgb(231, 231, 231);
+}
+
+.styled-slider-div{
+    align-self: center;
+    max-width: 960px;
+    width: 100%;
+    padding-right: calc(15px);
+    padding-left: calc(15px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.styled-slider-element{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-15px);
+    margin-left: calc(-15px);
+    -webkit-box-align: center !important;
+    align-items: center !important;
+}

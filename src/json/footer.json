@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "INFORMATION",
+        "subTitle":[
+            {"id": 1,
+            "name": "About Us",
+            "link": "/about"},
+            {"id": 2,
+            "name": "Manufactures",
+            "link": "/"},
+            {"id": 3,
+            "name": "Tracking Order",
+            "link": "/"},
+            {"id": 4,
+            "name": "Privacy & Policy",
+            "link": "/"},
+            {"id": 5,
+            "name": "Terms & Conditions",
+            "link": "/"}
+        ]
+    },
+    {
+        "id": 2,
+        "name": "MY ACCOUNT",
+        "subTitle":[
+            {"id": 1,
+            "name": "Login",
+            "link": "/"},
+            {"id": 2,
+            "name": "My Cart",
+            "link": "/"},
+            {"id": 3,
+            "name": "Wishlist",
+            "link": "/"},
+            {"id": 4,
+            "name": "Compare",
+            "link": "/"},
+            {"id": 5,
+            "name": "My Account",
+            "link": "/"}
+        ]
+    }
+]
