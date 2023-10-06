@@ -84,7 +84,7 @@ const Footer = () => {
               <Button
                 label="Subscribe"
                 onClick={() => {}}
-                width={150}
+                width={100}
                 variant="primary"
                 icon={SubscribeSvg}
                 iconSize={15}

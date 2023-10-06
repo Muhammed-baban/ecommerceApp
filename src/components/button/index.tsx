@@ -3,7 +3,7 @@ import IconButton from "../icon";
 import React from "react";
 
 interface ButtonProps {
-  label: string;
+  label?: string;
   onClick: () => void;
   variant?: "black" | "white" | "primary";
   icon?: string;
@@ -29,7 +29,7 @@ const Button: React.FC<ButtonProps> = ({
       maxWidth ? "maxWidth" : ""
     } color-${variant} size-${size}`}
     onClick={onClick}
-    style={{ width: width ? `${width}px` : "auto" }}
+    style={{ width: width ? `${width}%` : "auto" }}
   >
     <div className="styled-button-icon">
       {icon && iconSize !== undefined && (

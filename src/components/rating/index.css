@@ -1,5 +1,7 @@
 .styled-rating {
     display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   
   .styled-rating-star {
@@ -10,5 +12,5 @@
   }
   
   .styled-rating-star.filled {
-    color: #f5a623;
+    color: rgb(255, 112, 4);
   }   

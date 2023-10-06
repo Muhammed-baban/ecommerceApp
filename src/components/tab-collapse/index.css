@@ -1,0 +1,33 @@
+.styled-tabCollapse {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  
+  .styled-tabCollapse-item {
+    margin: 0px 10px;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 15px;
+    color: rgb(33, 33, 33);
+    transition: all 0.4s ease 0s;
+  }
+  
+  .styled-tabCollapse-span.active {
+    position: relative;
+  }
+  
+  .styled-tabCollapse-span.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 112, 4); 
+  }
+  

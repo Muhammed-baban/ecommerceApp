@@ -12,7 +12,7 @@ const Badge: React.FC<BadgeProps> = ({
     stock,
   }: BadgeProps) => {
     let discountPercentage: number | undefined;
-    let stockMessage: string;
+    let stockMessage: boolean;
   
     if (oldPrice !== undefined && price !== undefined) {
       if (oldPrice > price) {
@@ -21,19 +21,19 @@ const Badge: React.FC<BadgeProps> = ({
     }
   
     if (stock === 0) {
-      stockMessage = 'STOCK OUT';
+      stockMessage = true;
     } else if (stock < 0) {
-      stockMessage = 'STOCK OUT';
+      stockMessage = true;
     } else {
-      stockMessage = '';
+      stockMessage = false;
     }
   
     return (
       <div className="styled-badge">
-        <span className="styled-badge-sale">
+        {oldPrice && <span className="styled-badge-sale">
           {`${discountPercentage}%`}
-        </span>
-        <span className="styled-badge-stock">{stockMessage}</span>
+        </span>}
+        {stockMessage && <span className="styled-badge-stock">STOCK OUT</span>}
       </div>
     );
   };

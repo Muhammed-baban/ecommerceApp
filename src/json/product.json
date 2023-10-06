@@ -1,26 +1,162 @@
 {
     "products": [
       {
-        "id": 1,
+        "id": 5,
         "product_name": "Variable Product",
-        "variants": [
-          {
-            "color": "Gray",
-            "size": "Double",
-            "material": "Wood",
-            "price": 799.99,
-            "old_price": 999.99,
-            "stock": 20
-          },
-          {
+
+          
             "color": "Green",
             "size": "Single",
             "material": "Metal",
-            "price": 799.99,
-            "old_price": 999.99,
-            "stock": 10
+            "price": 69.0,
+            "old_price": 119.0,
+            "stock": 10,
+          
+        
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized words which don't look even slightly believable. If you are going to use a passage of",
+        "reviews": [
+          {
+            "user": "White Lewis",
+            "rating": 4,
+            "comment": "Vestibulum ante ipsum primis aucibus orci luctustrices ullarper euismod vehicula. Phasellus congue nulla."
           }
         ],
+        "image": [
+            {
+              "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948&w=1200&q=75"
+            },
+            {
+                "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11-02.jpg%3Fv%3D1632281991&w=1200&q=75"
+              },
+              {
+                "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11-03.jpg%3Fv%3D1632281991&w=1200&q=75"
+              }
+          ],
+          "cover_image": {
+            "img":"https://furns-react.netlify.app/nextimg/https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948/1920/75?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948&w=1920&q=75"
+          }
+          
+      },
+      {
+        "id": 5,
+        "product_name": "Josefa Queen Size Bed with Storage in Natural Teak Wood Finish",
+
+          
+            "color": "Green",
+            "size": "Single",
+            "material": "Metal",
+            "price": 69.0,
+            "old_price": 119.0,
+            "stock": 10,
+          
+        
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized words which don't look even slightly believable. If you are going to use a passage of",
+        "reviews": [
+          {
+            "user": "White Lewis",
+            "rating": 4,
+            "comment": "Vestibulum ante ipsum primis aucibus orci luctustrices ullarper euismod vehicula. Phasellus congue nulla."
+          }
+        ],
+        "image": [
+            {
+              "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948&w=1200&q=75"
+            },
+            {
+                "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11-02.jpg%3Fv%3D1632281991&w=1200&q=75"
+              },
+              {
+                "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11-03.jpg%3Fv%3D1632281991&w=1200&q=75"
+              }
+          ],
+          "cover_image": {
+            "img":"https://furns-react.netlify.app/nextimg/https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948/1920/75?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948&w=1920&q=75"
+          }
+          
+      },{
+        "id": 5,
+        "product_name": "Variable Product",
+
+          
+            "color": "Green",
+            "size": "Single",
+            "material": "Metal",
+            "price": 69.0,
+            "old_price": 119.0,
+            "stock": 10,
+          
+        
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized words which don't look even slightly believable. If you are going to use a passage of",
+        "reviews": [
+          {
+            "user": "White Lewis",
+            "rating": 4,
+            "comment": "Vestibulum ante ipsum primis aucibus orci luctustrices ullarper euismod vehicula. Phasellus congue nulla."
+          }
+        ],
+        "image": [
+            {
+              "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948&w=1200&q=75"
+            },
+            {
+                "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11-02.jpg%3Fv%3D1632281991&w=1200&q=75"
+              },
+              {
+                "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11-03.jpg%3Fv%3D1632281991&w=1200&q=75"
+              }
+          ],
+          "cover_image": {
+            "img":"https://furns-react.netlify.app/nextimg/https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948/1920/75?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948&w=1920&q=75"
+          }
+          
+      },{
+        "id": 5,
+        "product_name": "Variable Product",
+
+          
+            "color": "Green",
+            "size": "Single",
+            "material": "Metal",
+            "price": 69.0,
+            "old_price": 119.0,
+            "stock": 10,
+          
+        
+        "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized words which don't look even slightly believable. If you are going to use a passage of",
+        "reviews": [
+          {
+            "user": "White Lewis",
+            "rating": 4,
+            "comment": "Vestibulum ante ipsum primis aucibus orci luctustrices ullarper euismod vehicula. Phasellus congue nulla."
+          }
+        ],
+        "image": [
+            {
+              "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948&w=1200&q=75"
+            },
+            {
+                "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11-02.jpg%3Fv%3D1632281991&w=1200&q=75"
+              },
+              {
+                "img":"https://furns-react.netlify.app/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11-03.jpg%3Fv%3D1632281991&w=1200&q=75"
+              }
+          ],
+          "cover_image": {
+            "img":"https://furns-react.netlify.app/nextimg/https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948/1920/75?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Fproducts%2F11.jpg%3Fv%3D1632281948&w=1920&q=75"
+          }
+          
+      },{
+        "id": 5,
+        "product_name": "Variable Product",
+
+          
+            "color": "Green",
+            "size": "Single",
+            "material": "Metal",
+            "price": 90.0,
+            "stock": 0,
+          
+        
         "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized words which don't look even slightly believable. If you are going to use a passage of",
         "reviews": [
           {

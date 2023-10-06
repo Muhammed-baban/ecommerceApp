@@ -1,0 +1,35 @@
+.styled-profile-comment{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;   
+}
+
+.styled-profile-comment-image{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex: 0 0 120px;
+    margin: 0px 15px 0px 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(71, 71, 71);
+    border-radius: 50%;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.styled-profile-comment-conten{
+    width: 100%;
+    line-height: 1;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.styled-profile-comment-conten-title{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;  
+}

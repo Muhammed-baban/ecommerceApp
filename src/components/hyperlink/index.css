@@ -1,5 +1,6 @@
 .styled-hyperlink{
     text-decoration: none;
+    padding-left: 10px;
 }
 
 .styled-hyperlink.black{

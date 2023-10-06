@@ -22,7 +22,6 @@
   }
   
   .styled-button.color-primary {
-    transition: all 0.4s ease 0s;
     color: rgb(255, 255, 255);
     background-color: rgb(255, 112, 4);
     font-size: 16px;
@@ -35,7 +34,6 @@
   }
   
   .styled-button.color-white {
-    transition: all 0.4s ease 0s;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-size: 16px;
@@ -47,7 +45,6 @@
   }
   
   .styled-button.color-black {
-    transition: all 0.4s ease 0s;
     background-color: rgb(71, 71, 71);
     color: rgb(255, 255, 255);
     font-size: 16px;

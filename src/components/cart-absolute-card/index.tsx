@@ -15,7 +15,7 @@ const CartAbsolute: React.FC<CartAbsoluteProps> = ({
     return (
     <button className="styled-cart-absolute-button">
     <div>
-        <Icon icon={CartAbsoluteSvg} size={15}/>
+        <Icon icon={CartAbsoluteSvg} size={20}/>
     </div>
     <span className="styled-cart-absolute-items">{items} Items</span>
     <span className="styled-cart-absolute-price">{price} ₺</span>

@@ -14,7 +14,6 @@ import Rating from "../../components/rating";
 import "./home.css";
 import TextArea from "../../components/textarea";
 import Tabs from "../../components/tabs";
-import Badge from "../../components/badge";
 import TitleSubtitle from "../../components/title-subtitle";
 import IconButton from "../../components/icon-button";
 import Favorites from "../../assest/icon/favotites.svg";
@@ -22,7 +21,13 @@ import IconLabel from "../../components/icon-label";
 import Hyperlink from "../../components/hyperlink";
 import ProductCard from "../../components/product-card";
 import ProductJson from "../../json/product.json"
-
+import Select from "../../components/select";
+import SelectSvg from "../../assest/icon/Select.svg";
+import TabCollapse from "../../components/tab-collapse";
+import ReadCard from "../../components/read-card";
+import ProfileComment from "../../components/profile-comment";
+import CommentSVG from "../../assest/icon/Comment.svg"
+import CartSidebar from "../../components/cart-sidebar";
 const Home = () => {
   const jsonData =ProductJson;
   const [count, setCount] = useState(0);
@@ -33,8 +38,21 @@ const Home = () => {
     { label: "On Sale" },
     { label: "Trending" },
   ];
-  const [activeTab, setActiveTab] = useState("new arrival"); // Varsayılan aktif sekme
 
+  const cardData = {
+    image: "https://furns-react.netlify.app/nextimg/https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Farticles%2F1.jpg%3Fv%3D1631612421/1080/75?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0597%2F8970%2F5392%2Farticles%2F1.jpg%3Fv%3D1631612421&w=1080&q=75",
+    title: "Örnek Başlık",
+    hyperlink: "Raju",
+    date: "15 september, 2023",
+    description: "Bu bir örnek açıklama metni."
+  };
+  
+  const [activeTab, setActiveTab] = useState("new arrival"); 
+  const [activeTabCollapse, setActiveTabCollapse] = useState<number | null>(0);
+  const options = ["Option 1", "Option 2", "Option 3"];
+  const handleSelect = (selectedValue:string) => {
+    console.log(`Seçilen Değer: ${selectedValue}`);
+  };
   return (
     <Container>
       <div className="styled-home-circle-icon">
@@ -90,7 +108,7 @@ const Home = () => {
       <Button
         label="Shop Now"
         onClick={() => {}}
-        width={150}
+        width={15}
         variant="primary"
         icon={SubscribeSvg}
         iconSize={15}
@@ -98,13 +116,13 @@ const Home = () => {
       <Button
         label="Shop Now"
         onClick={() => {}}
-        width={150}
+        width={15}
         variant="white"
       ></Button>
       <Button
         label="Shop Now"
         onClick={() => {}}
-        width={150}
+        width={15}
         variant="black"
       ></Button>
       <br></br>
@@ -112,18 +130,24 @@ const Home = () => {
       <br></br>
       <TextArea label="Message" value="" onChange={() => {}}></TextArea>
       <br></br>
-      <Badge oldPrice={78} price={70} stock={0} />
       <IconLabel label="Add to wishlist" icon={Favorites} onClick={()=>{}} size={10}/>
       <br></br>
       <Hyperlink to="/" children="deneme" variant="white"/>
       <Hyperlink to="/" children="deneme" variant="black"/>
       <br></br>
-      <div className="App">
+      <div className="product">
       {jsonData.products.map((product) => (
         <ProductCard key={product.id} product={product} />
+        
       ))}
     </div>
-    </Container>
+    <Select data={options} onSelect={handleSelect} icon={SelectSvg}/>
+    <TabCollapse data={tabData} active={activeTabCollapse} setActive={setActiveTabCollapse} />
+        <ReadCard {...cardData}></ReadCard>
+        <ProfileComment image={CommentSVG} name="muhammed" rating={4}></ProfileComment>
+        {/* <CartSidebar></CartSidebar> */}
+
+        </Container>
   );
 };
 

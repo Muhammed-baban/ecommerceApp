@@ -1,0 +1,46 @@
+/* Beyaz tema için stil */
+.styled-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .styled-input .styled-input-label {
+    margin-bottom: 8px;
+  }
+  
+  .styled-input-label {
+    font-weight: bold;
+  }
+  
+  .styled-input-form {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 50px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    width: 100%;
+    text-transform: capitalize;
+    background: transparent;
+    border: 1px solid rgb(67, 71, 78);
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  
+  .styled-input-form.black {
+    background-color: rgb(47, 51, 58);
+    color: #ffffff;
+  }
+
+  .styled-input-form.white {
+    border: 1px solid rgb(235, 235, 235);
+    color:#000000;
+  }
+  .styled-input-form.black::placeholder {
+    color: #ffffff;
+  }
+  
+  .styled-input-form:focus{
+    border: 1px solid rgb(255, 112, 4);
+  }

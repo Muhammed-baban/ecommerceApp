@@ -1,14 +1,115 @@
-.styled-product-card {
+
+  .styled-product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(25% - 20px); 
+    margin: 10px; 
+    background-color: white;
     overflow: hidden;
-    margin-top: 30px;
   }
   
 .styled-product-card-image{
+    max-width: 100%;
+    height: auto;
     display: block;
+    transition: all 0.1s ease 0s;
+
+  }
+  
+.styled-product-card{
     position: relative;
     overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
 }
+ 
+  
+  .styled-product-card-title{
+    text-decoration: none;
+    color: rgb(33, 33, 33);
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    
+  }
 
-.styled-product-card-image:hover{
-    transform: scale(1.1) rotate(3deg);
-}
+  .styled-product-card-image:hover{
+    transform: scale(1.1) rotate(6deg);  
+  }
+
+  .styled-product-card-element{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px 0px;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .styled-product-card-price{
+    font-size: 16px;
+    line-height: 1;
+    font-family: Montserrat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(33, 33, 33);
+    margin-top: 9px;
+    font-weight: 600;
+  }
+
+  .styled-product-price-old{
+    margin-right: 10px;
+    color: rgb(153, 153, 153);
+    text-decoration: line-through;
+
+  }
+
+  .styled-product-card-title:hover{
+    color: rgb(255, 112, 4);
+  }
+
+  .styled-product-card-icon{
+    position: absolute;
+    z-index: 8;
+    top: 18px;
+    right: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+
+  .styled-product-card-button {
+    z-index: 11;
+    border-radius: 3px;
+    font-family: Raleway;
+    font-weight: 600;
+    bottom: 20px;
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    font-size: 14px;
+    visibility: hidden;
+    width: 100%;
+  }
+
+  .styled-product-card:hover > .styled-product-card-button {
+    visibility: visible;
+  }
+
+  .styled-product-card:hover > .styled-product-card-icon {
+    visibility: visible;
+  }
+
+  .styled-product-card-icon-favorites{
+    visibility:visible;
+  }

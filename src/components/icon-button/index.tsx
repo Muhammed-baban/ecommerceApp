@@ -10,7 +10,7 @@ interface IconButtonProps {
 
 function IconButton({ icon, size = 50, variant = "black", onClick }: IconButtonProps) {
   return (
-    <div>
+    <div className="styled-icon">
     <button className={`styled-icon-button ${variant}`} onClick={onClick}>
       <img className="styled-icon-button-image" style={{ width: size }} src={icon} alt="icon" />
     </button>
