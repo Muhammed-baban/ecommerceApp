@@ -145,7 +145,7 @@ const Home = () => {
     <TabCollapse data={tabData} active={activeTabCollapse} setActive={setActiveTabCollapse} />
         <ReadCard {...cardData}></ReadCard>
         <ProfileComment image={CommentSVG} name="muhammed" rating={4}></ProfileComment>
-        {/* <CartSidebar></CartSidebar> */}
+        <CartSidebar></CartSidebar>
 
         </Container>
   );

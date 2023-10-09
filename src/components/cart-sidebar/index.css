@@ -140,7 +140,7 @@
 }
 
 .styled-cart-sidebar-cart-product-image-img{
-    position:absolute;
+    position:relative;
     inset: 0px;
     box-sizing: border-box;
     padding: 0px;
@@ -152,6 +152,92 @@
     max-height: 100%;
 }
 
-.styled-cart-sidebar-cart-product-description{
+.styled-cart-sidebar-button{
+    padding: 20px;
+    padding-bottom: 30px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
 
+.styled-cart-sidebar-button-title{
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 3px;
+    padding: 5px;
+    line-height: 1;
+    border: 0px;
+    transition: all 0.4s ease 0s;
+    font-size: 16px;
+    font-family: Raleway;
+    background-color: rgb(255, 112, 4);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.styled-cart-sidebar-button-title:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 51, 58);
+}
+
+.styled-cart-sidebar-price{
+    margin-left: auto;
+    height: 45px;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 112, 4);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    position: relative;
+}
+
+.styled-cart-sidebar-cart-product-description{
+    display: flex;
+    margin-top: -4px;
+    position: relative;
+    padding-left: 12px;
+    align-items: flex-start;
+    flex: 1 0 calc(100% - 150px);
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-family: "Open Sans";
+}
+
+.styled-cart-sidebar-cart-product-description-link{
+    color: rgb(33, 33, 33);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.4s ease 0s;
+}
+
+.styled-cart-sidebar-cart-product-description-price{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(255, 112, 4);
+}
+
+.styled-cart-sidebar-cart-product-description-close{
+    width: 25px;
+    height: 25px;
+    line-height: 1;
+    font-size: 17px;
+    color: rgb(33, 33, 33);
+    font-family: Raleway;
+    border-radius: 50%;
+    border: none;
+}
+
+.styled-cart-sidebar-cart-product-description-close:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(220, 53, 69);
 }
