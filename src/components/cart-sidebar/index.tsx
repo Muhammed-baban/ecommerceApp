@@ -32,7 +32,7 @@ const CartSidebar: React.FC<CartSidebarProps> = () => {
               <div className="styled-cart-sidebar-cart-product-description">
                 <div>
                   <div className="styled-cart-sidebar-cart-product-description-element">
-                    <a className="styled-cart-sidebar-cart-product-description-link">
+                    <a className="styled-cart-sidebar-cart-product-description-link" href="/">
                       Hospital Reception Table
                     </a>
                   </div>
