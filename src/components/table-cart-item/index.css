@@ -1,0 +1,64 @@
+.styled-table-cart-item{
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+}
+
+.styled-table-cart-item td {
+    text-align: center ;
+    justify-content: center;
+    border: none !important;
+    vertical-align: middle !important;
+    padding: 0.75rem;
+}
+
+.styled-table-cart-item th{
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: rgb(33, 33, 33);
+    font-size: 14px;
+    font-weight: 700;
+    background-color: rgb(235, 235, 235);
+    border: none !important;
+    text-align: center !important;
+    padding: 21px 45px 22px !important;
+    vertical-align: bottom;
+}
+
+
+
+.styled-table-cart-item-image-img{
+    max-height: 135px;
+}
+
+.styled-table-cart-item-name{
+    width: 435px;
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+.styled-table-cart-item-name-link{
+    color: rgb(33, 33, 33);
+    font-weight: 600;
+}
+
+.styled-table-cart-item-action {
+    display: flex;
+    justify-content: center; /* İçerikleri yatay olarak ortala */
+    align-items: center; /* İçerikleri dikey olarak ortala */
+  }
+.styled-table-cart-item-name-link{
+    text-decoration: none;
+}
+
+.styled-table-cart-item-table{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 1px solid rgb(235, 235, 235);
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}

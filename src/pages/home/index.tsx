@@ -28,6 +28,7 @@ import ReadCard from "../../components/read-card";
 import ProfileComment from "../../components/profile-comment";
 import CommentSVG from "../../assest/icon/Comment.svg"
 import CartSidebar from "../../components/cart-sidebar";
+import TableCartItem from "../../components/table-cart-item";
 const Home = () => {
   const jsonData =ProductJson;
   const [count, setCount] = useState(0);
@@ -146,7 +147,7 @@ const Home = () => {
         <ReadCard {...cardData}></ReadCard>
         <ProfileComment image={CommentSVG} name="muhammed" rating={4}></ProfileComment>
         {/* <CartSidebar></CartSidebar> */}
-
+        {/* <TableCartItem></TableCartItem> */}
         </Container>
   );
 };
