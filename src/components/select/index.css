@@ -1,33 +1,54 @@
-.styled-select{
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  min-height: 45px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 3px;
-  border: 1px solid rgb(235, 235, 235);
+.styled-select {
+  display: inline-block;
+  position: relative;
+  width: 100%;
 }
 
-.styled-select-value{
-  -webkit-box-align: center;
-  align-items: center;
+.styled-select-value {
   display: flex;
-  flex: 1 1 0%;
-  flex-wrap: wrap;
+  align-items: center;
+  min-height: 45px;
+  background-color: #fff;
+  border-radius: 3px;
   padding: 2px 8px 2px 16px;
-  position: relative;
-  overflow: hidden;
-  color: rgb(25, 25, 25);
+  color: #191919;
+  cursor: pointer;
 }
-.styled-select-options{
-  color: rgb(25, 25, 25);
-    margin-left: 2px;
-    margin-right: 2px;
-    max-width: calc(100% - 8px);
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    top: 50%;
-    transform: translateY(-50%);
-    box-sizing: border-box;
-    font-size: 14px;
+
+.styled-select-value.open {
+  border: 1px solid rgb(255, 112, 4);
+}
+
+.styled-select-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.styled-select-options {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-top: none;
+  z-index: 999;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.styled-select-label {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.styled-select-label:hover {
+  background-color: #f1f1f1;
+}
+
+.styled-select-options .styled-select-label:hover{  
+  background-color: rgb(255, 112, 4);
 }
